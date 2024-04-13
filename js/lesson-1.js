@@ -82,3 +82,4 @@ function checkNumbers(num) {
   }
 }
 checkNumbers(num);
+checkNumbers(num);
