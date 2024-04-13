@@ -38,7 +38,7 @@
 
 //     default:
 //       sezon = " Enter 1-4";
-//       break; 
+//       break;
 //   }
 //   return sezon;
 // }
@@ -53,15 +53,33 @@ const max = 50;
 const min = 23;
 
 function logNumbers(min, max) {
-    let total = 0;
+  let total = 0;
 
-    for (let i = max; i >= min; i--) {
-        console.log(i);
-        if (i % 2 === 0) {
-            total += i;
-        }
+  for (let i = max; i >= min; i--) {
+    console.log(i);
+    if (i % 2 === 0) {
+      total += i;
     }
-    return total;
+  }
+  return total;
 }
 
-console.log(logNumbers(min, max));
+// console.log(logNumbers(min, max));
+// /Якщо число ділитися на 3 повертати fizz
+// //якщо ділитися на 5 повертати buzz
+// //Якщо ділитися на 3 і на 5 повернути fizzbuzz
+
+const num = 15;
+function checkNumbers(num) {
+  for (let i = 1; i <= num; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzbuzz");
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log("buzz");
+    }
+  }
+}
+checkNumbers(num);
+checkNumbers(num);
